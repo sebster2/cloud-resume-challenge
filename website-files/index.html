@@ -1,0 +1,44 @@
+<html>
+
+<head>
+    <title>katarn</title>
+    <script>
+        fetch('https://0d89funh20.execute-api.us-east-1.amazonaws.com/Prod/put')
+            .then(() => fetch('https://0d89funh20.execute-api.us-east-1.amazonaws.com/Prod/get'))
+            .then(response => response.json())
+            .then((data) => {
+                document.getElementById('replaceme').innerText = data.count
+            })
+    </script>
+    <style>
+        body {
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .float-right {
+            float: right;
+        }
+
+        .visitorcount {}
+    </style>
+</head>
+
+<body>
+
+    <p>
+        katarn has a fat cock
+    </p>
+
+    <div class="visitorcount text-center">
+        Visitors:
+        <span id="replaceme" />
+    </div>
+
+</body>
+
+</html>
