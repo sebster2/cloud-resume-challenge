@@ -14,7 +14,7 @@ jobs:
         with:
           go-version: ${{ env.GO_VERSION }}
       - name: test get-function
-        run: cd get-function && go test -v ./ && cd ../../
+        run: ls && go test -v ./ && cd ../../
       - name: test put-function
         run: cd put-function && go test -v ./ && cd ../../
   
