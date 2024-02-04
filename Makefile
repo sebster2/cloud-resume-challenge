@@ -14,3 +14,6 @@ invoke-put:
 
 invoke-get:
 	sam build && aws-vault exec millerws --no-session -- sam local invoke GetFunction
+
+git-push:
+	git push https://github.com/sebster2/cloud-resume-challenge master
