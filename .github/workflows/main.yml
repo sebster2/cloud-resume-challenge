@@ -40,8 +40,8 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: jakejarvis/s3-sync-action@master
-          working-directory: /home/runner/work/cloud-resume-challenge/cloud-resume-challenge 
         with:
+          working-directory: /home/runner/work/cloud-resume-challenge/cloud-resume-challenge 
           args: --delete
         env:
           AWS_S3_BUCKET: website.sebiproj.com
