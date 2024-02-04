@@ -99,21 +99,6 @@ Please ensure Go 1.x (where 'x' is the latest version) is installed as per the i
 
 A quickstart way would be to use Homebrew, chocolatey or your linux package manager.
 
-#### Homebrew (Mac)
-
-Issue the following command from the terminal:
-
-```shell
-brew install golang
-```
-
-If it's already installed, run the following command to ensure it's the latest version:
-
-```shell
-brew update
-brew upgrade golang
-```
-
 ## Bringing to the next level
 
 Here are a few ideas that you can use to get more acquainted as to how this overall process works:
