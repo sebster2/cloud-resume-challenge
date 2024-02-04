@@ -41,7 +41,6 @@ jobs:
       - uses: actions/checkout@v2
       - uses: jakejarvis/s3-sync-action@master
         with:
-          entryPoint: /home/runner/work/cloud-resume-challenge/cloud-resume-challenge 
           args: --delete
         env:
           AWS_S3_BUCKET: website.sebiproj.com
