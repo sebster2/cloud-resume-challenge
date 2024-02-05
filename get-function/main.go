@@ -44,14 +44,13 @@ func handler(request events.APIGatewayProxyRequest) (events.APIGatewayProxyRespo
 	}
 
 	return events.APIGatewayProxyResponse{
-		// TODO: This is temporary, come back to fix this later
+		StatusCode: 200,
 		Headers: map[string]string{
 			"Access-Control-Allow-Origin":  "*",
 			"Access-Control-Allow-Methods": "*",
 			"Access-Control-Allow-Headers": "*",
 		},
-		Body:       fmt.Sprintf("{ \"count\": \"%s\" }", count.Visitors),
-		StatusCode: 200,
+		Body: fmt.Sprintf("{ \"count\": \"%s\" }", count.Visitors),
 	}, nil
 }
 
