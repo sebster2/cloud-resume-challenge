@@ -62,7 +62,7 @@ Resources:
       DistributionConfig:
         DefaultCacheBehavior:
           ViewerProtocolPolicy: allow-all
-          TargetOriginId: website.sebiproj.com.s3-website-us-east-1.amazonaws.com
+          TargetOriginId: website.sebiproj.com
           DefaultTTL: 0
           MinTTL: 0
           MaxTTL: 0
@@ -70,7 +70,7 @@ Resources:
             QueryString: false
         Origins:
           - DomainName: website.sebiproj.com.s3-website-us-east-1.amazonaws.com
-            Id: website.sebiproj.com.s3-website-us-east-1.amazonaws.com
+            Id: website.sebiproj.com
             CustomOriginConfig:
               OriginProtocolPolicy: http-only
         ViewerCertificate:
