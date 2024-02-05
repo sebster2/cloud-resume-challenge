@@ -9,6 +9,8 @@ stack_name = "cloud-resume-challenge"
 [default.build.parameters]
 cached = true
 parallel = true
+container_env_var = ["get-function.CGO_ENABLED=0"]
+container_env_var = ["put-function.CGO_ENABLED=0"]
 
 [default.validate.parameters]
 lint = true
