@@ -99,6 +99,7 @@ Resources:
       Policies:
         - DynamoDBCrudPolicy:
             TableName: cloud-resume-challenge
+      MemorySize: 512
       CodeUri: get-function/
       Handler: get-function
       Runtime: go1.x
@@ -120,6 +121,7 @@ Resources:
       Policies:
         - DynamoDBCrudPolicy:
             TableName: cloud-resume-challenge
+      MemorySize: 512
       CodeUri: put-function/
       Handler: put-function
       Runtime: go1.x
