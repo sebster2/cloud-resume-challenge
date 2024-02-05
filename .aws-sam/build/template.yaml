@@ -109,7 +109,8 @@ Resources:
             Method: GET
       Environment:
         Variables:
-          PARAM1: VALUE
+          PARAM: VALUE
+          CGO_ENABLED: 0
     Metadata:
       SamResourceId: GetFunction
   PutFunction:
@@ -131,7 +132,8 @@ Resources:
             Method: GET
       Environment:
         Variables:
-          PARAM1: VALUE
+          PARAM: VALUE
+          CGO_ENABLED: 0
     Metadata:
       SamResourceId: PutFunction
 Outputs:
