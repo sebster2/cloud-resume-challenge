@@ -112,8 +112,8 @@ Resources:
             Method: GET
       Environment:
         Variables:
-          PARAM1: VALUE
-          LD_LIBRARY_PATH: /opt/python/lib
+          PARAM: VALUE
+          CGO_ENABLED: 0
 
   PutFunction:
     Type: AWS::Serverless::Function
@@ -134,8 +134,8 @@ Resources:
             Method: GET
       Environment:
         Variables:
-          PARAM1: VALUE
-          LD_LIBRARY_PATH: /opt/python/lib
+          PARAM: VALUE
+          CGO_ENABLED: 0
 
 Outputs:
   # ServerlessRestApi is an implicit API created out of Events key under Serverless::Function
