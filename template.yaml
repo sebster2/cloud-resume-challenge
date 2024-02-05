@@ -113,7 +113,6 @@ Resources:
       Environment:
         Variables:
           PARAM: VALUE
-          CGO_ENABLED: 0
 
   PutFunction:
     Type: AWS::Serverless::Function
@@ -135,7 +134,6 @@ Resources:
       Environment:
         Variables:
           PARAM: VALUE
-          CGO_ENABLED: 0
 
 Outputs:
   # ServerlessRestApi is an implicit API created out of Events key under Serverless::Function

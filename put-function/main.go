@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"log"
 
 	"github.com/aws/aws-lambda-go/events"
@@ -47,7 +46,6 @@ func handler(request events.APIGatewayProxyRequest) (events.APIGatewayProxyRespo
 			"Access-Control-Allow-Methods": "*",
 			"Access-Control-Allow-Headers": "*",
 		},
-		Body:       fmt.Sprintf("{ \"count\": \"2\" }"),
 		StatusCode: 200,
 	}, nil
 }
