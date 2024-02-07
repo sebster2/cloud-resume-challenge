@@ -30,43 +30,34 @@
 
 <body>
     <h1 class="text-center"> Sebi Miller </h1>
-    <p class="text-center"><strong>Phone:</strong> XXX-XXX-XXXX </p>
-    <p class="text-center"><strong>Email:</strong> email@email.com </p>
+    <p class="text-center"><strong>Phone:</strong> 513-364-1883 </p>
+    <p class="text-center"><strong>Email:</strong> sebi.miller@gmail.com </p>
 
     <p>
         <i>
-            About me: Sed posuere consectetur est at lobortis. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Lorem
-            ipsum
-            dolor sit amet, consectetur adipiscing elit. Cum sociis natoque penatibus et magnis dis parturient montes,
-            nascetur ridiculus mus. Curabitur blandit tempus porttitor. Cras justo odio, dapibus ac facilisis in,
-            egestas
-            eget quam. Cras mattis consectetur purus sit amet fermentum.
+            About me: After 5 years in a help desk role I was ready to move on, and set my eyes on the Solution Architect career path. I recently earned my AWS Solution Architect - Associate certification, 
+            and figured this website would be a great start to my portfolio. Hopefully we have a chance to work together in the future!
         </i>
     </p>
 
     <h3>About this site</h3>
     <p>
-        Sed posuere consectetur est at lobortis. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Lorem
-        ipsum dolor sit amet, consectetur adipiscing elit. Cum sociis natoque penatibus et magnis dis parturient montes,
-        nascetur ridiculus mus. Curabitur blandit tempus porttitor. Cras justo odio, dapibus ac facilisis in, egestas
-        eget quam. Cras mattis consectetur purus sit amet fermentum.
+        This site is meant to be a demonstration of the understanding of AWS concepts and utilities. The static site is hosted in an S3 bucket, which is behind a Cloudfront distribution protected by an AWS managed https cert.
+        On the backend, there is a DynamoDB table holding our visitors value to keep track of how many people have visited the site. 
+        This is updated by a lambda function invoking a PUT command to our API, and the visitor counter is displayed by using javascript to fetch the visitor value from the DynamoDB via our API.
+        We are utilizing the AWS Serverless Aplication Model to save all of our Infrastructure as code, which can be found in the below Github repository.
+        Finally, CI/CD is handled via Github Actions. The main.yml file for the workflows used in Github Actions can also be found in the below Github repository.
     </p>
 
     <h3>Github</h3>
     <p>
-        Sed posuere consectetur est at lobortis. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Lorem
-        ipsum dolor sit amet, consectetur adipiscing elit. Cum sociis natoque penatibus et magnis dis parturient montes,
-        nascetur ridiculus mus. Curabitur blandit tempus porttitor. Cras justo odio, dapibus ac facilisis in, egestas
-        eget quam. Cras mattis consectetur purus sit amet fermentum.
+        https://github.com/sebster2/cloud-resume-challenge
+        Github proved to be very helpful throughout this process as a way to test our code before deploying it, saving time in the long run when running into errors. 
+        I can imagine this will prove to be much more useful when working on a team compared to this solo project.
     </p>
 
     <h3>Solution Architect Certification</h3>
-    <p>
-        Sed posuere consectetur est at lobortis. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Lorem
-        ipsum dolor sit amet, consectetur adipiscing elit. Cum sociis natoque penatibus et magnis dis parturient montes,
-        nascetur ridiculus mus. Curabitur blandit tempus porttitor. Cras justo odio, dapibus ac facilisis in, egestas
-        eget quam. Cras mattis consectetur purus sit amet fermentum.
-    </p>
+        <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="a1ec4950-9c1a-420e-8d31-fee585f5018f" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
 
     <div class="visitorcount text-center">
         Visitors:
