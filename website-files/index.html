@@ -43,16 +43,16 @@
     <h3>About this site</h3>
     <p>
         This site is meant to be a demonstration of the understanding of AWS concepts and utilities. The static site is hosted in an S3 bucket, which is behind a Cloudfront distribution protected by an AWS managed https cert.
-        On the backend, there is a DynamoDB table holding our visitors value to keep track of how many people have visited the site. 
-        This is updated by a lambda function invoking a PUT command to our API, and the visitor counter is displayed by using javascript to fetch the visitor value from the DynamoDB via our API.
-        We are utilizing the AWS Serverless Aplication Model to save all of our Infrastructure as code, which can be found in the below Github repository.
+        On the backend, there is a DynamoDB table holding the visitors value to keep track of how many people have visited the site. 
+        This is updated by a lambda function invoking a PUT command to the API, and the visitor counter is displayed by using javascript to fetch the visitor value from the DynamoDB via the same API.
+        We are utilizing the AWS Serverless Aplication Model to save all of my Infrastructure as code, which can be found in the below Github repository.
         Finally, CI/CD is handled via Github Actions. The main.yml file for the workflows used in Github Actions can also be found in the below Github repository.
     </p>
 
     <h3>Github</h3>
     <p>
         https://github.com/sebster2/cloud-resume-challenge
-        Github proved to be very helpful throughout this process as a way to test our code before deploying it, saving time in the long run when running into errors. 
+        Github proved to be very helpful throughout this process as a way to test my code before deploying it, saving time in the long run when running into errors. 
         I can imagine this will prove to be much more useful when working on a team compared to this solo project.
     </p>
 
